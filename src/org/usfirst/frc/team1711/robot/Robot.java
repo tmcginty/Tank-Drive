@@ -29,6 +29,12 @@ public class Robot extends IterativeRobot {
 	}
 
 	@Override
+	public void teleopInit() {
+	}
+	
+	
+
+		@Override
 	public void teleopPeriodic() {
 		m_myRobot.tankDrive(m_leftStick.getY(), m_rightStick.getY());
 	}
